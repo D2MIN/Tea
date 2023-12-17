@@ -17,14 +17,13 @@ li {
 
 .vidioBg {
   height: 100vh;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #F6F4D2;
+  background-color: #CBDFBD;
 }
 
 .header {
@@ -231,6 +230,6 @@ input:focus::-webkit-input-placeholder {
   .header .upHeader .name {
     text-align: center;
     padding: 0px;
-    margin: 100vh;
+    margin: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
