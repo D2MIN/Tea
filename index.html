@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
-<body>
-    <h1>
-        <ul>
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 4 </li>
-            <li>App 1</li>
-            <li>App 2</li>
-        </ul>
-    </h1>
-</body>
+    <body>
+        <div class="formBlockMain">
+            <div class="formBlock">
+                <div class="text" id="text">
+                    <h1 id="formTitle">Заполните форму</h1>
+                    <h3 id="formText">Задайте свой вопрос, и мы обязательно на него ответим</h3>
+                </div>
+                    <!-- modify this form HTML as you wish and place wherever you want your form -->
+                <form name="form"
+                class="formcarryForm" 
+                action="https://formcarry.com/s/3L6ZxOvyYM"
+                enctype="multipart/form-data"
+                >
+                <input id="input" type="text" name="name" placeholder="Ваше имя" required/>
+                <input id="input" type="email" name="email" placeholder="E-mail" required/>
+                <input id="input" type="tel" name="tel" placeholder="+7-999-99-99" required/> 
+                <input id="input" type="text" name="text" placeholder="Ваш вопрос" required/>
+                
+                <button name="button" type="submit">Отправить</button>
+                </form>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script>
+                $(function(){
+                $(".formcarryForm").submit(function(e){
+                e.preventDefault();
+                var href = $(this).attr("action");
+                
+                $.ajax({
+                    type: "POST",
+                    url: href,
+                    data: new FormData(this),
+                    dataType: "json",
+                    processData: false,
+                    contentType: false,
+                    success: function(response){
+                        if(response.status == "success"){
+                            alert("Ваш вопрос отправлен, спасибо!");
+                        }
+                        else if(response.code === 422){
+                        alert("Field validation failed");
+                        $.each(response.errors, function(key) {
+                            $('[name="' + key + '"]').addClass('formcarry-field-error');
+                        });
+                        }
+                        else{
+                        alert("An error occured: " + response.message);
+                        }
+                    },
+                    error: function(jqXHR, textStatus){
+                        const errorObject = jqXHR.responseJSON
+
+                        alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+                    },
+                    complete: function(){
+                        // This will be fired after request is complete whether it's successful or not.
+                        // Use this block to run some code after request is complete.
+                    }
+                });
+                });
+                });
+                </script>
+            </div>
+        </div>
+    </body>
 </html>
-+-
