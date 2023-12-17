@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .formBlockMain{
     background-image: url("photos/backPhoto.jpg");
     background-size: 100%;
@@ -58,3 +59,22 @@ input:focus::-webkit-input-placeholder {
     filter: drop-shadow(0 0 0.75rem #181d12);
     border-radius: 20px;
 }
+=======
+@font-face {
+  font-family: "Tea";
+  src: url(/font/tea.ttf);
+}
+* {
+  margin: 0px;
+}
+
+.title {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tea;
+  font-size: 26px;
+  background-color: darkseagreen;
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> b6f208f6da84819b2427f4ca0123f1bc3c868f66
