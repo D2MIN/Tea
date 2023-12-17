@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+body{
+    margin: 0 auto;
+}
 .formBlockMain{
     background-image: url("photos/backPhoto.jpg");
     background-size: 100%;
@@ -49,9 +51,10 @@ input:focus::-webkit-input-placeholder {
 }
 
 .formBlock{
-    margin-top: 150px;
+    margin-top: calc(20%);
     margin-left: 15px;
     margin-right: 15px;
+    max-width: 1300px;
     background-color: #F6F4D2;
     display: flex;
     flex-direction: column;
@@ -59,22 +62,3 @@ input:focus::-webkit-input-placeholder {
     filter: drop-shadow(0 0 0.75rem #181d12);
     border-radius: 20px;
 }
-=======
-@font-face {
-  font-family: "Tea";
-  src: url(/font/tea.ttf);
-}
-* {
-  margin: 0px;
-}
-
-.title {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Tea;
-  font-size: 26px;
-  background-color: darkseagreen;
-}/*# sourceMappingURL=style.css.map */
->>>>>>> b6f208f6da84819b2427f4ca0123f1bc3c868f66
