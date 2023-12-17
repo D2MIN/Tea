@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Tea";
+  src: url(/font/tea.ttf);
+}
+* {
+  margin: 0px;
+}
+
+.title {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tea;
+  font-size: 26px;
+  background-color: darkseagreen;
+}/*# sourceMappingURL=style.css.map */
