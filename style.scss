@@ -1,3 +1,10 @@
+$colorDop : #D4E09B;
+$colorBgOne : #F6F4D2;
+$colorBgTwo : #CBDFBD;
+$colorTextLite : #F19C79;
+$colorTextHite : #A44A3f;
+$colorText : #161b10;
+
 @font-face {
 	font-family: 'Tea'; 
 	src: url(/font/tea.ttf); 
@@ -7,12 +14,75 @@
     margin: 0px;
 }
 
-.title{
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    color: $colorText;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Tea;
-    font-size: 26px;
-    background-color: darkseagreen;
+    background-color: $colorBgOne;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .upHeader{
+        display: flex;
+        justify-content: space-between;
+        
+        .name{
+            font-size: 30px;
+            padding: 25px;
+            padding-left: 100px;
+        }
+
+        .linksBlock{
+            padding: 50px;
+            font-size: 25px;
+            .ulLins{
+                display: flex;
+                li{
+                    padding-right: 100px;
+                }
+                .ulAbout{
+                    display: none;
+                    position: absolute;
+                    padding: 0px;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+                p{
+                    width: 120%;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: 4px solid $colorBgOne;
+                }
+                .about:hover .ulAbout{
+                    display: block;
+                }
+            }
+            a{
+                font-weight: 700;
+            }
+            p:hover{
+                border-bottom: 4px solid $colorDop;
+            }
+            a:hover{
+                border-bottom: 4px solid $colorDop;
+            }
+        }
+    }
+
+    .hederTitle{
+        margin-top: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Tea;
+        font-size: 40px;
+    }
 }
