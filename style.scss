@@ -1,3 +1,10 @@
+$colorDop : #D4E09B;
+$colorBgOne : #F6F4D2;
+$colorBgTwo : #CBDFBD;
+$colorTextLite : #F19C79;
+$colorTextHite : #A44A3f;
+$colorText : #161b10;
+
 @font-face {
 	font-family: 'Tea'; 
 	src: url(/font/tea.ttf); 
@@ -7,12 +14,240 @@
     margin: 0px;
 }
 
-.title{
+a{
+    text-decoration: none;
+    color: $colorText;
+}
+
+li{
+    list-style: none;
+}
+
+.vidioBg{
     min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    // align-items: center;
+    position: relative;
+    background-color: $colorBgTwo;
+}
+
+.header{
+    position: absolute;
+    color: $colorText;
+    min-height: 100%;
+    width: 100vw;
+    background-color: $colorBgOne;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .upHeader{
+        font-family: tea;
+        min-height: 150px;
+        display: flex;
+        justify-content: space-between;
+        
+        .name{
+            font-size: 30px;
+            margin: 2.5vh;
+            margin-left: 10vh;
+            padding: 0px 20px;
+            h1{
+                border-bottom: 5px solid $colorText;
+            }
+        }
+
+        .linksBlock{
+            padding: 50px;
+            font-size: 25px;
+            .ulLins{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    padding-right: 10vh;
+                }
+                .ulAbout{
+                    display: none;
+                    position: absolute;
+                    padding: 0px;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+                p{
+                    width: 120%;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: 4px solid rgba(115, 255, 0, 0);
+                }
+                .about:hover .ulAbout{
+                    display: block;
+                }
+            }
+            a{
+                font-weight: 700;
+            }
+            p:hover{
+                border-bottom: 4px solid $colorText;
+            }
+            a:hover{
+                border-bottom: 4px solid $colorText;
+            }
+        }
+    }
+
+    .hederTitle{
+        margin-top: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Tea;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+// THIS is CODE LIDA
+
+.formBlockMain{
+    background-image: url("photos/backPhoto.jpg");
+    background-size: 100%;
+    background-color: #F6F4D2;
+    background-blend-mode: multiply;
+    height: 800px;
+    min-width: 100%;
+    margin: 0 auto;
+    padding-top: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Tea;
-    font-size: 26px;
-    background-color: darkseagreen;
+
+}
+.text{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #181d12;
+    outline: none;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+button{
+    width: calc(80%);
+    font-size: 20px;
+    border-radius: 10px; 
+    padding: 10px;
+    background-color: #181d12;
+    color: #F6F4D2;
+    margin-bottom: 25px;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease; 
+}
+
+.formBlock{
+    margin-top: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #F6F4D2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem #181d12);
+    border-radius: 20px;
+    max-width: 1200px;
+}
+
+.text h1, h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+// -------- MEDIA -------------
+
+@media (max-width: 1920px){
+    .header .upHeader .name{
+        h1{
+            border-bottom: 5px solid $colorBgOne;
+        }
+    }
+    .header .upHeader .linksBlock .ulLins p:hover{
+        border-bottom: 4px solid $colorDop;
+    }
+    .header .upHeader .linksBlock .ulLins p{
+        border-bottom: 4px solid rgba(255, 0, 0, 0);
+    }
+    .header .upHeader .linksBlock .ulLins a:hover{
+        border-bottom: 4px solid $colorDop;
+    }
+
+    a{
+        color: $colorBgOne;
+    }
+    .header{
+        background-color: rgba(0, 0, 0, 0.459);
+        color: $colorBgOne;
+        .header .upHeader .linksBlock .ulLins p:hover{
+            color: $colorBgOne;
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .upHeader{
+        flex-direction: column;
+        .linksBlock{
+            display: flex;
+            justify-content: center;
+            .links{
+                margin-top: 1vh;
+                font-size: 34px;
+                .ulLins{
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 30px;
+                    li{
+                        margin-top: 30px;
+                        padding: 0px;
+                    }
+                }
+                .about{
+                    display: none;
+                }
+            }
+        }
+    }
+    .header .hederTitle{
+        margin: 10vh;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header .upHeader .linksBlock{
+        padding: 20px;
+    }
+    .header .upHeader .name{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
 }
