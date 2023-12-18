@@ -21,16 +21,17 @@ li {
   overflow: hidden;
   display: flex;
   position: relative;
-  background-color: #CBDFBD;
+  background-color: #D4E09B;
 }
 
 .header {
+  box-shadow: none;
   position: absolute;
   color: #161b10;
   min-height: 100%;
   width: 100vw;
   background-color: #F6F4D2;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Tea;
 }
 .header .upHeader {
   font-family: tea;
@@ -93,6 +94,35 @@ li {
   font-family: Tea;
   font-size: 40px;
   text-align: center;
+}
+
+.comynitySection {
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.3882352941);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #F6F4D2;
+}
+.comynitySection .comynityBlock .comynityPerson {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #161b10;
+  margin: 80px 0px;
+}
+.comynitySection .comynityBlock .comynityPerson .personImg img {
+  border-radius: 30%;
+}
+.comynitySection .comynityBlock .comynityPerson .personTitle {
+  max-width: 600px;
+  margin: 0px 50px;
+}
+.comynitySection .comynityBlock .comynityPerson .personTitle .mainTitle {
+  font-size: 30px;
+}
+.comynitySection .comynityBlock .comynityPerson .personTitle p {
+  margin: 10px;
 }
 
 .formBlockMain {
@@ -186,6 +216,7 @@ input:focus::-webkit-input-placeholder {
   .header {
     background-color: rgba(0, 0, 0, 0.459);
     color: #F6F4D2;
+    box-shadow: inset 10px 10px 200px #000;
   }
   .header .header .upHeader .linksBlock .ulLins p:hover {
     color: #F6F4D2;
@@ -229,5 +260,30 @@ input:focus::-webkit-input-placeholder {
     text-align: center;
     padding: 0px;
     margin: 0px;
+  }
+}
+@media (max-width: 580px) {
+  .comynitySection .comynityBlock .comynityPerson {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg {
+    margin-left: 50px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg img {
+    width: 200px;
+    height: 200px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personTitle .maintitle {
+    font-size: 24px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg img {
+    order: 0;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personTitle {
+    order: 1;
   }
 }/*# sourceMappingURL=style.css.map */

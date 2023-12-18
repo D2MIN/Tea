@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- HEADER -->
     <div class="vidioBg">
         <video src="photos/bgHeader.mp4" autoplay muted loop></video>
         <div class="header">
             <div class="upHeader">
                 <div class="name">
-                        <h1>Чайный Бум</h1>
+                    <h1>Чайный Бум</h1>
                 </div>
                 <div class="linksBlock">
                     <div class="links">
                         <ul class="ulLins">
-                            <li><a href=""><p>Каталог</p></a></li>
-                            <li><a href=""><p>Доставка</p></a></li>
+                            <li><a href="">
+                                    <p>Каталог</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Доставка</p>
+                                </a></li>
                             <li class="about">
-                                <a href=""><p>О нас</p></a>
+                                <a href="">
+                                    <p>О нас</p>
+                                </a>
                                 <ul class="ulAbout">
                                     <li><a href="">О компании</a></li>
                                     <li><a href="">Отзывы</a></li>
                                     <li><a href="">Поддержка</a></li>
                                 </ul>
                             </li>
-                            <li><a href=""><p>Контакты</p></a></li>
-                            <li><a href=""><p>Корзина</p></a></li>
+                            <li><a href="">
+                                    <p>Контакты</p>
+                                </a></li>
+                            <li><a href="">
+                                    <p>Корзина</p>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-    
+
             <div class="hederTitle">
                 <h1>
                     Лучший чай в Росии и других странах
                 </h1>
                 <p>выращенный в лучших условиях солнечных стран</p>
-            </div>    
-        </div>
-    </div>
-
-        <div class="formBlockMain">
-            <div class="formBlock">
-                <div class="text" id="text">
-                    <h1 id="formTitle">Заполните форму</h1>
-                    <h3 id="formText">Задайте свой вопрос, и мы обязательно на него ответим</h3>
-                </div>
-                <form name="form"
-                class="formcarryForm" 
-                action="https://formcarry.com/s/3L6ZxOvyYM"
-                enctype="multipart/form-data"
-                >
-                <input id="input" type="text" name="name" placeholder="Ваше имя" required/>
-                <input id="input" type="email" name="email" placeholder="E-mail" required/>
-                <input id="input" type="tel" name="tel" placeholder="+7-999-99-99" required/> 
-                <input id="input" type="text" name="text" placeholder="Ваш вопрос" required/>
-                
-                <button name="button" type="submit">Отправить</button>
-                </form>
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-                <script>
-                $(function(){
-                $(".formcarryForm").submit(function(e){
-                e.preventDefault();
-                var href = $(this).attr("action");
-                
-                $.ajax({
-                    type: "POST",
-                    url: href,
-                    data: new FormData(this),
-                    dataType: "json",
-                    processData: false,
-                    contentType: false,
-                    success: function(response){
-                        if(response.status == "success"){
-                            alert("Ваш вопрос отправлен, спасибо!");
-                        }
-                        else if(response.code === 422){
-                        alert("Field validation failed");
-                        $.each(response.errors, function(key) {
-                            $('[name="' + key + '"]').addClass('formcarry-field-error');
-                        });
-                        }
-                        else{
-                        alert("An error occured: " + response.message);
-                        }
-                    },
-                    error: function(jqXHR, textStatus){
-                        const errorObject = jqXHR.responseJSON
-
-                        alert("Request failed, " + errorObject.title + ": " + errorObject.message);
-                    },
-                    complete: function(){
-                        // This will be fired after request is complete whether it's successful or not.
-                        // Use this block to run some code after request is complete.
-                    }
-                });
-                });
-                });
-                </script>
             </div>
         </div>
-    </body>
+    </div>
+    <!-- HEADER -->
+
+    <!-- COMYNITY -->
+    <div class="comynitySection">
+        <div class="comynityBlock">
+            <div class="comynityPerson">
+                <div class="personImg">
+                    <img src="photos/lida2.jpg" alt="1" width="250px" height="250px">
+                </div>
+                <div class="personTitle">
+                    <p class="mainTitle">Лидия - Главный web-разработчик. </p>
+                    <p> Один из основателей компании "Чайный бум"</p>
+                    <p> И по совместительству разработчик сайта компании.
+                    Так же занимаеться логистикой таваров и их поставкой</p>
+                </div>
+            </div>
+            <div class="comynityPerson chet">
+                <div class="personTitle">
+                    <p class="mainTitle">Роман - старший помошничек </p>
+                    <p> Глава лучшей компании "Чайный бум"</p>
+                    <p> Cпециалист, занимающийся приготовлением и подачей
+                    чая и других напитков в чайном заведении</p>
+                </div>
+                <div class="personImg">
+                    <img src="photos/cat.jpg" alt="1" width="250px" height="250px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COMYNITY -->
+
+    <!-- FORM -->
+    <div class="formBlockMain">
+        <div class="formBlock">
+            <div class="text" id="text">
+                <h1 id="formTitle">Заполните форму</h1>
+                <h3 id="formText">Задайте свой вопрос, и мы обязательно на него ответим</h3>
+            </div>
+            <form name="form" class="formcarryForm" action="https://formcarry.com/s/3L6ZxOvyYM"
+                enctype="multipart/form-data">
+                <input id="input" type="text" name="name" placeholder="Ваше имя" required />
+                <input id="input" type="email" name="email" placeholder="E-mail" required />
+                <input id="input" type="tel" name="tel" placeholder="+7-999-99-99" required />
+                <input id="input" type="text" name="text" placeholder="Ваш вопрос" required />
+
+                <button name="button" type="submit">Отправить</button>
+            </form>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script>
+                $(function () {
+                    $(".formcarryForm").submit(function (e) {
+                        e.preventDefault();
+                        var href = $(this).attr("action");
+
+                        $.ajax({
+                            type: "POST",
+                            url: href,
+                            data: new FormData(this),
+                            dataType: "json",
+                            processData: false,
+                            contentType: false,
+                            success: function (response) {
+                                if (response.status == "success") {
+                                    alert("Ваш вопрос отправлен, спасибо!");
+                                }
+                                else if (response.code === 422) {
+                                    alert("Field validation failed");
+                                    $.each(response.errors, function (key) {
+                                        $('[name="' + key + '"]').addClass('formcarry-field-error');
+                                    });
+                                }
+                                else {
+                                    alert("An error occured: " + response.message);
+                                }
+                            },
+                            error: function (jqXHR, textStatus) {
+                                const errorObject = jqXHR.responseJSON
+
+                                alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+                            },
+                            complete: function () {
+                                // This will be fired after request is complete whether it's successful or not.
+                                // Use this block to run some code after request is complete.
+                            }
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    <!-- FORM -->
+
+</body>
+
 </html>
