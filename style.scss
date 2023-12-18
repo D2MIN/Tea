@@ -29,7 +29,6 @@ li{
     width: 100%;
     overflow: hidden;
     display: flex;
-    // align-items: center;
     position: relative;
     background-color:$colorDop;
 }
@@ -54,6 +53,7 @@ li{
             margin: 2.5vh;
             margin-left: 10vh;
             padding: 0px 20px;
+            height: 10px;
             h1{
                 border-bottom: 5px solid $colorText;
             }
@@ -112,6 +112,106 @@ li{
 
 // ---------- HEADER ----------
 
+// ----------CATALOG----------
+.katalogPhotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #161b10;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .katalogPhotos img{
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: multiply;
+    border-radius: 30px;
+  }
+  
+  .bergamot{
+    background: #CBDFBD;
+    border-radius: 30px;
+    margin: 20px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    animation: show 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  
+  .jasmine{
+    background: #F6F4D2;
+    margin: 20px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    animation: show 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: 30px;
+  }
+  
+  .mint{
+    background: #D4E09B;
+    border-radius: 30px;
+    margin: 20px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    animation: show 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes show{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .toKatalog{
+    background-color: #F6F4D2;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50px;
+    margin-left: 80px;
+    color: #161b10;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  button:hover{
+    background-color: #D4E09B;
+    color: #161b10;
+    border: solid 2px #D4E09B;
+    transition: all 300ms ease;
+  }
+  
+  .katalogText{
+    font-family: 'Courier New', Courier, monospace;
+    color: #F6F4D2;
+    font-size: 25px;
+    width: calc(60%);
+    text-align: center;
+  }
+  
+  .katalogTextBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: calc(30%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+  }
+//--------------CATALOG-----------------
+
 // ---------- COMYNITY ----------
 .comynitySection {
     font-family: 'Courier New', Courier, monospace;
@@ -147,6 +247,57 @@ li{
     }
 }
 // ---------- COMYNITY ----------
+
+// -----------SET--------------
+.setSelection {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    background-color: $colorDop;
+    min-height: 650px;
+    .setBlock {
+        margin: 100px 0px;
+        font-size: 18px;
+        display: flex;
+        align-items:center;
+        .set {
+            min-width: 300px;
+            &:hover{
+                border: 3.7px solid $colorText;
+            }
+            &:nth-child(2){
+                border: 3.7px solid $colorText;
+                min-height: 370px;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            border: 2px solid black;
+            border-radius: 20px;
+            .headTitle {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .title {
+                margin: 20px 20px;
+                p{
+                    margin: 10px;
+                }
+            }
+            button{
+                margin-top: 5vh;
+            }
+            .formButton{
+                border-radius: 20px;
+                border: 2px solid $colorText;
+            }
+        }
+    }
+}
+// -----------SET--------------
 
 // THIS is CODE LIDA aka FORM
 
