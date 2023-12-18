@@ -24,12 +24,11 @@ li{
 }
 
 .vidioBg{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // align-items: center;
     position: relative;
     background-color: $colorBgTwo;
 }
@@ -37,7 +36,7 @@ li{
 .header{
     position: absolute;
     color: $colorText;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100vw;
     background-color: $colorBgOne;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -204,7 +203,7 @@ input:focus::-webkit-input-placeholder {
         color: $colorBgOne;
     }
     .header{
-        background-color: hsla(0, 0%, 0%, 0.651);
+        background-color: rgba(0, 0, 0, 0.459);
         color: $colorBgOne;
         .header .upHeader .linksBlock .ulLins p:hover{
             color: $colorBgOne;
