@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="skript.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -52,9 +53,26 @@
                     Лучший чай в Росии и других странах
                 </h1>
                 <p>выращенный в лучших условиях солнечных стран</p>
-            </div>
+            </div>    
         </div>
     </div>
+    <div class="katalogPhotos">
+        <div class="bergamot">
+            <img src="photos/bergamot.jpg">
+        </div>
+        <div class="jasmine">
+            <img src="photos/jasmine.jpg">
+        </div>
+        <div class="mint">
+            <img src="photos/mint.jpg">
+        </div>
+        <div class="katalogTextBlock">
+            <h3 class="katalogText">Чай — листья растения камелии китайской, которые подвергают полной или частичной ферментации. Из них производят 6 основных видов чая: черный, зеленый, пуэр, желтый, улун, белый. Напиток ценят за бодрящий терпкий вкус и полезные свойства</h3>
+            <button name="toKatalog" class="toKatalog" onclick="window.location.href = '#katalog';">Перейти к каталогу</button>
+        </div>
+    </div>
+
+        
     <!-- HEADER -->
 
     <!-- COMYNITY -->
@@ -149,7 +167,7 @@
                 <input id="input" type="tel" name="tel" placeholder="+7-999-99-99" required />
                 <input id="input" type="text" name="text" placeholder="Ваш вопрос" required />
 
-                <button name="button" type="submit">Отправить</button>
+                <button class="formButton" type="submit">Отправить</button>
             </form>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
