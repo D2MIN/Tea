@@ -44,6 +44,7 @@ li {
   margin: 2.5vh;
   margin-left: 10vh;
   padding: 0px 20px;
+  height: 120px;
 }
 .header .upHeader .name h1 {
   border-bottom: 5px solid #161b10;
@@ -122,6 +123,38 @@ li {
   font-size: 30px;
 }
 .comynitySection .comynityBlock .comynityPerson .personTitle p {
+  margin: 10px;
+}
+
+.setSelection {
+  display: flex;
+  justify-content: center;
+  background-color: #D4E09B;
+}
+.setSelection .setBlock {
+  margin: 100px 0px;
+  font-size: 20px;
+  display: flex;
+  align-items: safe;
+}
+.setSelection .setBlock .set {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.setSelection .setBlock .set .headTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.setSelection .setBlock .set .title {
+  margin: 20px 20px;
+}
+.setSelection .setBlock .set .title p {
   margin: 10px;
 }
 

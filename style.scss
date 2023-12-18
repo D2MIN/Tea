@@ -29,7 +29,6 @@ li{
     width: 100%;
     overflow: hidden;
     display: flex;
-    // align-items: center;
     position: relative;
     background-color:$colorDop;
 }
@@ -54,6 +53,7 @@ li{
             margin: 2.5vh;
             margin-left: 10vh;
             padding: 0px 20px;
+            height: 120px;
             h1{
                 border-bottom: 5px solid $colorText;
             }
@@ -147,6 +147,40 @@ li{
     }
 }
 // ---------- COMYNITY ----------
+
+// -----------SET--------------
+.setSelection {
+    display: flex;
+    justify-content: center;
+    background-color: $colorDop;
+    .setBlock {
+        margin: 100px 0px;
+        font-size: 20px;
+        display: flex;
+        align-items:safe;
+        .set {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            .headTitle {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .title {
+                margin: 20px 20px;
+                p{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+// -----------SET--------------
 
 // THIS is CODE LIDA aka FORM
 
