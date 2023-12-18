@@ -127,7 +127,7 @@ input {
   margin-bottom: 25px;
 }
 
-button {
+.formButton {
   width: 80%;
   font-size: 20px;
   border-radius: 10px;
@@ -165,6 +165,104 @@ input:focus::-webkit-input-placeholder {
 .text h1, h3 {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.katalogPhotos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #161b10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.katalogPhotos img{
+  width: 300px;
+  height: 300px;
+  mix-blend-mode: multiply;
+  border-radius: 30px;
+}
+
+.bergamot{
+  background: #CBDFBD;
+  border-radius: 30px;
+  margin: 20px;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.jasmine{
+  background: #F6F4D2;
+  margin: 20px;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  border-radius: 30px;
+}
+
+.mint{
+  background: #D4E09B;
+  border-radius: 30px;
+  margin: 20px;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.toKatalog{
+  background-color: #F6F4D2;
+  width: 40%;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  height: 50px;
+  margin-left: 80px;
+  color: #161b10;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+  background-color: #D4E09B;
+  color: #161b10;
+  border: solid 2px #D4E09B;
+  transition: all 300ms ease;
+}
+
+.katalogText{
+  font-family: 'Courier New', Courier, monospace;
+  color: #F6F4D2;
+  font-size: 25px;
+  width: calc(60%);
+  text-align: center;
+}
+
+.katalogTextBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: calc(30%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  animation: show 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @media (max-width: 1920px) {
