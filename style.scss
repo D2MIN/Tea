@@ -7,7 +7,7 @@ $colorText : #161b10;
 
 @font-face {
 	font-family: 'Tea'; 
-	src: url(/font/tea.ttf); 
+	src: url(font/tea.ttf); 
 }
 
 *{
@@ -183,7 +183,7 @@ input:focus::-webkit-input-placeholder {
 
 // -------- MEDIA -------------
 
-@media (max-width: 1920px){
+@media (max-width: 1920px) and (max-height: 1100px){
     .header .upHeader .name{
         h1{
             border-bottom: 5px solid $colorBgOne;
