@@ -6,6 +6,9 @@
   margin: 0px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: #161b10;
@@ -102,7 +105,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #161b10;
+  background-color: #5b6330;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -342,6 +345,118 @@ input:focus::-webkit-input-placeholder {
 .text h1, h3 {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.aboutCompany{
+  margin-top: 150px;
+  color: #161b10;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.aboutCompany h1{
+  text-align: center;
+  padding: 55px;
+}
+
+.aboutCompany h2, h3{
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.aboutCompany h2{
+  text-decoration: underline;
+}
+
+.aboutCompanyColor, .aboutCompanyColorMain{
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+.aboutCompanyColorMain{
+  background: #5b6330;
+  z-index: -4; 
+}
+
+.aboutCompanyColor{
+  background: #D4E09B;
+  z-index: -3; 
+  opacity: 0;
+}
+
+.quality{
+  margin-top: 100px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.qualityText{
+  width: calc(50%);
+  margin-left: 50px;
+}
+
+.quality img{
+  padding-top: 50px;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.quality h3{
+  padding-top: 30px;
+}
+
+.support{
+  margin-top: 150px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.supportText{
+  width: calc(60%);
+}
+
+.support img{
+  height: 300px;
+  mix-blend-mode: multiply;
+}
+
+.delivery img{
+  height: 300px;
+  mix-blend-mode: multiply;
+}
+
+.deliveryText{
+  text-align: right;
+  margin-right: 50px;
+}
+
+.aboutCompanyTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.aboutCompanyTitle img{
+  mix-blend-mode: multiply;
+  width: 300px;
+}
+
+.cloud{
+  max-width: 200px;
+  height: 100px;
+  margin-left: 25px;
+  padding-right: 150px;
+  position: relative;
+}
+
+.FormButton{
+  max-width: 200px;
+  margin-left: 250px;
+  background-color: transparent;
 }
 
 @media (max-width: 1920px) and (max-height: 1100px) {
