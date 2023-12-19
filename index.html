@@ -56,6 +56,7 @@
             </div>    
         </div>
     </div>
+    <!-- HEADER -->
 
     <!-- CATALOG -->
     <div class="katalogPhotos">
@@ -78,8 +79,80 @@
     </div>
     <!-- CATALOG -->
 
-        
-    <!-- HEADER -->
+    <!-- ABOUT -->
+    <div class="aboutCompany">
+        <div class="aboutCompanyColorMain"></div>
+        <div class="aboutCompanyColor"></div>
+        <div class="aboutCompanyTitle">
+            <img src="photos/titleLeft.jpg">
+            <h1>О Компании</h1>
+            <img src="photos/titleRight.jpg">
+        </div>
+            <div class="support">
+                <div class="supportText">
+                    <h2>Поддержка</h2>
+                    <h3>Поможем в подборе сортов чая лично для вас, а также ответим на все вопросы, которые могут у вас возникнуть</h3>
+                </div>
+                <img src="photos/support.jpg">
+            </div>
+            <button class="FormButton" onclick="window.location.href = '#formBlockMain';">Заполнить форму</button>
+            <div class="quality">
+                <div class="qualityText">
+                    <h2>Качество</h2>
+                    <h3>Мы сами отбираем и поставляем лучшие сорта отборного чая, чтобы вы могли насладиться полнотой вкуса,нежностью аромата и качеством нашей продукции </h3>
+                </div>
+                <div class="clouds">
+                    <img id="cloud" class="cloud" src="photos/cloud.png">
+                    <img id="cloud" class="cloud" src="photos/cloud.png">
+                    <img id="cloud" class="cloud" src="photos/cloudReverse.png">
+                </div>
+                <img src="photos/quality.jpg">
+            </div>
+            <div class="delivery">
+                <div class="deliveryText">
+                    <h2>Доставка</h2>
+                    <h3>Стандартный срок доставки составляет 2−4 рабочих дня, если в карточке товара не указано иное.
+                        <br>
+                        Доставка осуществляется до места, указанного клиентом при оформлении заявки, курьером или в отделения партнеров</h3>
+                </div>
+                <img src="photos/leafFirst.jpg">
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                var $bg_light = $('.aboutCompanyColor');
+                var bg_state = null;
+                var scroll_dark = 1600;
+                var scroll_light = 3600;
+                $(window).scroll(function() {
+                    var scroll_current = $(this).scrollTop();
+                    if (scroll_current < scroll_dark) {
+                        if (bg_state != '#5b6330') {
+                            bg_state = '#5b6330';
+                            $bg_light.stop().animate({
+                                opacity: 0
+                            });
+                        }
+                    console.log(bg_state);
+                    } else if (scroll_current > scroll_light) {
+                        if (bg_state != '#D4E09B') {
+                            bg_state = '#D4E09B';
+                            $bg_light.stop().animate({
+                                opacity: 1
+                            });
+                        }
+                    } else {
+                bg_state = null;
+                $bg_light.stop().animate({
+                        opacity: (scroll_current - scroll_dark) / (scroll_light - scroll_dark)
+                        });
+                    }
+                });
+
+                });
+            </script>
+    </div>
+    <!-- ABOUT -->    
 
     <!-- COMYNITY -->
     <div class="comynitySection">
@@ -163,7 +236,7 @@
     <!-- SET -->
 
     <!-- FORM -->
-    <div class="formBlockMain">
+    <div class="formBlockMain" id="formBlockMain">
         <div class="formBlock">
             <div class="text" id="text">
                 <h1 id="formTitle">Заполните форму</h1>
