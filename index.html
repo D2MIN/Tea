@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="skript.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -56,14 +56,19 @@
             </div>    
         </div>
     </div>
+
+    <!-- CATALOG -->
     <div class="katalogPhotos">
         <div class="bergamot">
+            <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
             <img src="photos/bergamot.jpg">
         </div>
         <div class="jasmine">
+            <p>Ароматный чай с жасмином, имеющий невероятный аромат и терпкость</p>
             <img src="photos/jasmine.jpg">
         </div>
         <div class="mint">
+            <p>Раслабляющий чай с ромашкой, который способен востановить ваши моральные силы</p>
             <img src="photos/mint.jpg">
         </div>
         <div class="katalogTextBlock">
@@ -71,6 +76,7 @@
             <button name="toKatalog" class="toKatalog" onclick="window.location.href = '#katalog';">Перейти к каталогу</button>
         </div>
     </div>
+    <!-- CATALOG -->
 
         
     <!-- HEADER -->
@@ -83,7 +89,7 @@
                     <img src="photos/lida2.jpg" alt="1" width="250px" height="250px">
                 </div>
                 <div class="personTitle">
-                    <p class="mainTitle">Лидия - Главный web-разработчик. </p>
+                    <p class="mainTitle">Лидия - Главный разработчик. </p>
                     <p> Один из основателей компании "Чайный бум"</p>
                     <p> И по совместительству разработчик сайта компании.
                     Так же занимаеться логистикой таваров и их поставкой</p>
@@ -107,7 +113,7 @@
     <!-- SET -->
         <div class="setSelection">
             <div class="setBlock">
-                <div class="set">
+                <div class="set" id="set1">
                     <div class="headTitle">
                         Классика
                     </div>
@@ -116,12 +122,13 @@
                         <p>Чай с жасмином (5 шт)</p>
                         <p>Чай с бергамотом (6 шт)</p>
                         <p>Фирменые стикеры</p>
+                        <p class="cell">299p</p>
                     </div>
                     <button class="formButton" type="button">
                         Заказать
                     </button>
                 </div>
-                <div class="set">
+                <div class="set" id="set2">
                     <div class="headTitle">
                         Базовый
                     </div>
@@ -130,12 +137,13 @@
                         <p>Чай синий (8 шт)</p>
                         <p>Чай фруктовый (8 шт)</p>
                         <p>Фирменые стикеры</p>
+                        <p class="cell">499p</p>
                     </div>
                     <button class="formButton" type="button">
                         Заказать
                     </button>
                 </div>
-                <div class="set">
+                <div class="set" id="set3">
                     <div class="headTitle">
                         Продвинутый
                     </div>
@@ -144,6 +152,7 @@
                         <p>Чай с жасмином (8 шт)</p>
                         <p>Чай с ромашкой (10 шт)</p>
                         <p>Фирменые стикеры</p>
+                        <p class="cell">1299p</p>
                     </div>
                     <button class="formButton" type="button">
                         Заказать

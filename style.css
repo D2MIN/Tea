@@ -51,6 +51,7 @@ li {
 }
 .header .upHeader .linksBlock {
   padding: 50px;
+  margin-top: 5vh;
   font-size: 25px;
 }
 .header .upHeader .linksBlock .ulLins {
@@ -123,6 +124,35 @@ li {
   animation: show 1s 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+  max-width: 300px;
+}
+.bergamot img {
+  position: relative;
+  z-index: 1;
+}
+.bergamot p {
+  transition: transform 0.5s, opacity 0.5s;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7803921569);
+  color: #161b10;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.bergamot:hover p {
+  opacity: 1;
+}
+.bergamot img:hover {
+  opacity: 0.3;
+  color: #000;
 }
 
 .jasmine {
@@ -134,6 +164,35 @@ li {
   animation-fill-mode: forwards;
   animation-delay: 1s;
   border-radius: 30px;
+  max-width: 300px;
+}
+.jasmine img {
+  position: relative;
+  z-index: 1;
+}
+.jasmine p {
+  transition: transform 0.5s, opacity 0.5s;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7803921569);
+  color: #161b10;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.jasmine:hover p {
+  opacity: 1;
+}
+.jasmine img:hover {
+  opacity: 0.3;
+  color: #000;
 }
 
 .mint {
@@ -145,6 +204,35 @@ li {
   animation: show 1s 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+  max-width: 300px;
+}
+.mint img {
+  position: relative;
+  z-index: 1;
+}
+.mint p {
+  transition: transform 0.5s, opacity 0.5s;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7803921569);
+  color: #161b10;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.mint:hover p {
+  opacity: 1;
+}
+.mint img:hover {
+  opacity: 0.3;
+  color: #000;
 }
 
 @keyframes show {
@@ -237,7 +325,9 @@ button:hover {
   align-items: center;
 }
 .setSelection .setBlock .set {
-  min-width: 300px;
+  margin: 0px 10px;
+  min-width: 320px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,12 +336,10 @@ button:hover {
   border: 2px solid black;
   border-radius: 20px;
 }
-.setSelection .setBlock .set:hover {
-  border: 3.7px solid #161b10;
-}
 .setSelection .setBlock .set:nth-child(2) {
-  border: 3.7px solid #161b10;
-  min-height: 370px;
+  border: 4px solid #161b10;
+  min-height: 450px;
+  font-weight: 100;
 }
 .setSelection .setBlock .set .headTitle {
   font-size: 30px;
@@ -264,8 +352,11 @@ button:hover {
 .setSelection .setBlock .set .title p {
   margin: 10px;
 }
-.setSelection .setBlock .set button {
+.setSelection .setBlock .set .title .cell {
+  padding-top: 10vh;
   margin-top: 5vh;
+  font-size: 20px;
+  text-align: center;
 }
 .setSelection .setBlock .set .formButton {
   border-radius: 20px;
@@ -367,6 +458,16 @@ input:focus::-webkit-input-placeholder {
   }
   .header .header .upHeader .linksBlock .ulLins p:hover {
     color: #F6F4D2;
+  }
+}
+@media (max-width: 1499px) {
+  .header .upHeader {
+    display: block;
+    text-align: center;
+  }
+  .header .upHeader .linksBlock {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 1400px) {
