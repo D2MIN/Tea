@@ -14,6 +14,10 @@ $colorText : #161b10;
     margin: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: $colorText;
@@ -61,6 +65,7 @@ li{
 
         .linksBlock{
             padding: 50px;
+            margin-top: 5vh;
             font-size: 25px;
             .ulLins{
                 display: flex;
@@ -74,6 +79,7 @@ li{
                     padding: 0px;
                     li{
                         margin-top: 20px;
+                        text-align: start;
                     }
                 }
                 p{
@@ -118,7 +124,7 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #161b10;
+    background-color: #5b6330;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -139,6 +145,38 @@ li{
     animation: show 1s 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+    
+    max-width: 300px;
+    img{
+        position: relative;
+        z-index: 1;
+    }
+    p{
+        transition: transform 0.5s, opacity 0.5s;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        background-color: #ffffffc7;
+        color: $colorText;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+    &:hover{
+        p{
+            opacity: 1;
+        }
+    }
+    img:hover{
+        opacity: 0.3;
+        color: #000;
+    }
   }
   
   .jasmine{
@@ -150,6 +188,38 @@ li{
     animation-fill-mode: forwards;
     animation-delay: 1s;
     border-radius: 30px;
+
+    max-width: 300px;
+    img{
+        position: relative;
+        z-index: 1;
+    }
+    p{
+        transition: transform 0.5s, opacity 0.5s;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        background-color: #ffffffc7;
+        color: $colorText;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+    &:hover{
+        p{
+            opacity: 1;
+        }
+    }
+    img:hover{
+        opacity: 0.3;
+        color: #000;
+    }
   }
   
   .mint{
@@ -161,6 +231,38 @@ li{
     animation: show 1s 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+
+    max-width: 300px;
+    img{
+        position: relative;
+        z-index: 1;
+    }
+    p{
+        transition: transform 0.5s, opacity 0.5s;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        background-color: #ffffffc7;
+        color: $colorText;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+    &:hover{
+        p{
+            opacity: 1;
+        }
+    }
+    img:hover{
+        opacity: 0.3;
+        color: #000;
+    }
   }
   
   @keyframes show{
@@ -261,13 +363,13 @@ li{
         display: flex;
         align-items:center;
         .set {
-            min-width: 300px;
-            &:hover{
-                border: 3.7px solid $colorText;
-            }
+            margin: 0px 10px;
+            min-width: 320px;
+            min-height: 400px;
             &:nth-child(2){
-                border: 3.7px solid $colorText;
-                min-height: 370px;
+                border: 4px solid $colorText;
+                min-height: 450px;
+                font-weight: 100;
             }
             display: flex;
             flex-direction: column;
@@ -286,9 +388,12 @@ li{
                 p{
                     margin: 10px;
                 }
-            }
-            button{
-                margin-top: 5vh;
+                .cell{
+                    padding-top: 10vh;
+                    margin-top: 5vh;
+                    font-size: 20px;
+                    text-align: center;
+                }
             }
             .formButton{
                 border-radius: 20px;
@@ -371,6 +476,120 @@ input:focus::-webkit-input-placeholder {
     margin-bottom: 20px;
 }
 
+// ---------ABOUT--------------
+.aboutCompany{
+    margin-top: 150px;
+    color: #161b10;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .aboutCompany h1{
+    text-align: center;
+    padding: 55px;
+  }
+  
+  .aboutCompany h2, h3{
+    margin-top: 30px;
+    letter-spacing: 2px;
+  }
+  
+  .aboutCompany h2{
+    text-decoration: underline;
+  }
+  
+  .aboutCompanyColor, .aboutCompanyColorMain{
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+  }
+  
+  .aboutCompanyColorMain{
+    background: #5b6330;
+    z-index: -4; 
+  }
+  
+  .aboutCompanyColor{
+    background: #D4E09B;
+    z-index: -3; 
+    opacity: 0;
+  }
+  
+  .quality{
+    margin-top: 100px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .qualityText{
+    width: calc(50%);
+    margin-left: 50px;
+  }
+  
+  .quality img{
+    padding-top: 50px;
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+  
+  .quality h3{
+    padding-top: 30px;
+  }
+  
+  .support{
+    margin-top: 150px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .supportText{
+    width: calc(60%);
+  }
+  
+  .support img{
+    height: 300px;
+    mix-blend-mode: multiply;
+  }
+  
+  .delivery img{
+    height: 300px;
+    mix-blend-mode: multiply;
+  }
+  
+  .deliveryText{
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .aboutCompanyTitle{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutCompanyTitle img{
+    mix-blend-mode: multiply;
+    width: 300px;
+  }
+  
+  .cloud{
+    max-width: 200px;
+    height: 100px;
+    margin-left: 25px;
+    padding-right: 150px;
+    position: relative;
+  }
+  
+  .FormButton{
+    max-width: 200px;
+    margin-left: 250px;
+    background-color: transparent;
+  }
+// ---------ABOUT--------------
+
 // THIS is CODE LIDA aka FORM
 
 // -------- MEDIA -------------
@@ -400,6 +619,17 @@ input:focus::-webkit-input-placeholder {
         box-shadow: inset 10px 10px 200px #000;
         .header .upHeader .linksBlock .ulLins p:hover{
             color: $colorBgOne;
+        }
+    }
+}
+
+@media (max-width: 1499px){
+    .header .upHeader{
+        display: block;
+        text-align: center;
+        .linksBlock{
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -312,6 +312,7 @@ button {
   font-size: 20px;
   border-radius: 10px;
   margin: 50px;
+  padding: 10px;
   background-color: #181d12;
   color: #F6F4D2;
   margin-bottom: 25px;
@@ -463,12 +464,14 @@ input:focus::-webkit-input-placeholder {
 .katalog{
   display: flex;
   flex-direction: column;
+  color: #F6F4D2;
   justify-content: center;
-  background-color: #CBDFBD;
+  background-color: #181d12;
 }
 
 .katalog h1{
   text-align: center;
+  text-decoration: underline;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 50px;
@@ -480,7 +483,7 @@ input:focus::-webkit-input-placeholder {
   display: grid;
   grid-template-columns: 400px 400px 400px ;
   grid-template-rows: 400px 400px 400px;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
 .grid img{
