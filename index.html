@@ -57,9 +57,7 @@
             </div>    
         </div>
     </div>
-    <!-- HEADER -->
 
-    <!-- CATALOG -->
     <div class="katalogPhotos">
         <div class="bergamot">
             <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
@@ -78,9 +76,7 @@
             <button name="toKatalog" class="toKatalog" onclick="window.location.href = '#katalog';">Перейти к каталогу</button>
         </div>
     </div>
-    <!-- CATALOG -->
-
-    <!-- ABOUT -->
+    
     <div class="aboutCompany">
         <div class="aboutCompanyColorMain"></div>
         <div class="aboutCompanyColor"></div>
@@ -125,6 +121,7 @@
                 var bg_state = null;
                 var scroll_dark = 1600;
                 var scroll_light = 3600;
+
                 $(window).scroll(function() {
                     var scroll_current = $(this).scrollTop();
                     if (scroll_current < scroll_dark) {
@@ -153,7 +150,7 @@
                 });
             </script>
     </div>
-    <!-- ABOUT -->    
+    <!-- HEADER -->
 
     <!-- COMYNITY -->
     <div class="comynitySection">
@@ -163,7 +160,7 @@
                     <img src="photos/lida2.jpg" alt="1" width="250px" height="250px">
                 </div>
                 <div class="personTitle">
-                    <p class="mainTitle">Лидия - Главный разработчик. </p>
+                    <p class="mainTitle">Лидия - Главный web-разработчик. </p>
                     <p> Один из основателей компании "Чайный бум"</p>
                     <p> И по совместительству разработчик сайта компании.
                     Так же занимаеться логистикой таваров и их поставкой</p>
@@ -266,6 +263,65 @@
         </div>
     <!-- SET -->
 
+    <div class="katalog" id="katalog">
+        <h1>Каталог</h1>
+        <div class="grid">
+                <div class="blueTea">
+                    <img src="photos/blueTea.jpg">
+                    <div class="product-about">
+                        <h3>Чай "Анчан"</h3>
+                        <h3>Анчан - это травяной чай с удивительным набором полезных свойств буквально ошеломляет своим ярко-синим цветом </h3>
+                        <h3>1900</h3>
+                        <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+            <div class="Tea">
+                <img src="photos/chamomileTea.jpg">
+                <div class="product-about">
+                    <h3>Чай с ромашкой</h3>
+                    <h3>Ромашка, наверное, один из самых узнаваемых цветков в мире. Еще в детстве мы знали, что она поможет предсказать нам любовь, успокоить после стресса, и что из нее получается вкусный чай</h3>
+                    <h3>1300</h3>
+                    <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+            <div class="Tea">
+                <img src="photos/bergamotTea.jpg">
+                <div class="product-about">
+                    <h3>"Эрл Грей"</h3>
+                    <h3>Чай с бергамотом положительно влияет на настроение и когнитивную функцию, снижает стресс, тревогу, депрессию</h3>
+                    <h3>1500</h3>
+                    <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+            <div class="Tea">
+                <img src="photos/cherryTea.jpg">
+                <div class="product-about">
+                    <h3>"Lost Cherry"</h3>
+                    <h3>Чай с ароматом вишни – простой и вкусный. Он сочетает в себе ни с чем не сравнимый, насыщенный аромат спелой вишни, сладость высушенных ягод, и конечно же все крепость черного чая</h3>
+                    <h3>1800</h3>
+                    <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+            <div class="Tea">
+                <img src="photos/jasmineTea.jpg">
+                <div class="product-about">
+                    <h3>Чай с жасмином</h3>
+                    <h3>В жасминовом чайном напитке сочетается польза черного, зеленого или белого чая и цветков жасмина, обладающих изысканных вкусом и нежным ароматом</h3>
+                    <h3>1500</h3>
+                    <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+            <div class="Tea">
+                <img src="photos/mintTea.jpg">
+                <div class="product-about">
+                    <h3>Чай с мятой</h3>
+                    <h3>Чай с мятой — это напиток на основе чая (черного или зеленого) и листьев мяты. Он имеет ментоловый аромат и освежающий вкус, который помогает расслабиться и прийти в гармонию с собой</h3>
+                    <h3>1100</h3>
+                    <button class="add" type="button">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FORM -->
     <div class="formBlockMain" id="formBlockMain">
         <div class="formBlock">
