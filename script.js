@@ -7,13 +7,13 @@ s1.addEventListener('mouseenter', function() {
     this.style.minHeight = "450px";
     this.style.fontWeight = "600";
     s2.style.border = "2px solid black";
-    s2.style.minHeight = "400px";
+    s2.style.minHeight = "450px";
     s2.style.fontWeight = "400";
 });
 
 s1.addEventListener('mouseleave', function() {
     this.style.border = "2px solid black";
-    this.style.minHeight = "400px";
+    this.style.minHeight = "450px";
     this.style.fontWeight = "400";
     s2.style.border = "4px solid black";
     s2.style.minHeight = "450px";
