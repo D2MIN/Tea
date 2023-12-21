@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="script.js" defer></script>
     <script src="sliderScript.js" defer></script>
+    <script src="feedbackSlider.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -54,14 +55,14 @@
                     Лучший чай в Росии и других странах
                 </h1>
                 <p>выращенный в лучших условиях солнечных стран</p>
-            </div>    
+            </div>
         </div>
     </div>
     <!-- HEADER -->
     <div class="katalogPhotos">
         <div class="bergamot" onclick="window.location.href = '#bergamotTea';">
-                <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
-                <img src="photos/bergamot.jpg">
+            <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
+            <img src="photos/bergamot.jpg">
         </div>
         <div class="jasmine" onclick="window.location.href = '#jasmineTea';">
             <p>Ароматный чай с жасмином, имеющий невероятный аромат и терпкость</p>
@@ -72,11 +73,14 @@
             <img src="photos/mint.jpg">
         </div>
         <div class="katalogTextBlock">
-            <h3 class="katalogText">Чай — листья растения камелии китайской, которые подвергают полной или частичной ферментации. Из них производят 6 основных видов чая: черный, зеленый, пуэр, желтый, улун, белый. Напиток ценят за бодрящий терпкий вкус и полезные свойства</h3>
-            <button name="toKatalog" class="toKatalog" onclick="window.location.href = '#katalog';">Перейти к каталогу</button>
+            <h3 class="katalogText">Чай — листья растения камелии китайской, которые подвергают полной или частичной
+                ферментации. Из них производят 6 основных видов чая: черный, зеленый, пуэр, желтый, улун, белый. Напиток
+                ценят за бодрящий терпкий вкус и полезные свойства</h3>
+            <button name="toKatalog" class="toKatalog" onclick="window.location.href = '#katalog';">Перейти к
+                каталогу</button>
         </div>
     </div>
-    
+
     <div class="aboutCompany">
         <div class="aboutCompanyColorMain"></div>
         <div class="aboutCompanyColor"></div>
@@ -85,44 +89,48 @@
             <h1>О Компании</h1>
             <img src="photos/titleRight.jpg">
         </div>
-            <div class="support">
-                <div class="supportText">
-                    <h2>Поддержка</h2>
-                    <h3>Поможем в подборе сортов чая лично для вас, а также ответим на все вопросы, которые могут у вас возникнуть</h3>
-                </div>
-                <img src="photos/support.jpg">
+        <div class="support">
+            <div class="supportText">
+                <h2>Поддержка</h2>
+                <h3>Поможем в подборе сортов чая лично для вас, а также ответим на все вопросы, которые могут у вас
+                    возникнуть</h3>
             </div>
-            <button class="FormButton" onclick="window.location.href = '#formBlockMain';">Заполнить форму</button>
-            <div class="quality">
-                <div class="qualityText">
-                    <h2>Качество</h2>
-                    <h3>Мы сами отбираем и поставляем лучшие сорта отборного чая, чтобы вы могли насладиться полнотой вкуса,нежностью аромата и качеством нашей продукции </h3>
-                </div>
-                <div class="clouds">
-                    <img id="cloud" class="cloud" src="photos/cloud.png">
-                    <img id="cloud" class="cloud" src="photos/cloud.png">
-                    <img id="cloud" class="cloud" src="photos/cloudReverse.png">
-                </div>
-                <img src="photos/quality.jpg">
+            <img src="photos/support.jpg">
+        </div>
+        <button class="FormButton" onclick="window.location.href = '#formBlockMain';">Заполнить форму</button>
+        <div class="quality">
+            <div class="qualityText">
+                <h2>Качество</h2>
+                <h3>Мы сами отбираем и поставляем лучшие сорта отборного чая, чтобы вы могли насладиться полнотой
+                    вкуса,нежностью аромата и качеством нашей продукции </h3>
             </div>
-            <div class="delivery">
-                <div class="deliveryText">
-                    <h2>Доставка</h2>
-                    <h3>Стандартный срок доставки составляет 2−4 рабочих дня, если в карточке товара не указано иное.
-                        <br>
-                        Доставка осуществляется до места, указанного клиентом при оформлении заявки, курьером или в отделения партнеров</h3>
-                </div>
-                <img src="photos/leafFirst.jpg">
+            <div class="clouds">
+                <img id="cloud" class="cloud" src="photos/cloud.png">
+                <img id="cloud" class="cloud" src="photos/cloud.png">
+                <img id="cloud" class="cloud" src="photos/cloudReverse.png">
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-            <script>
-                $(document).ready(function(){
+            <img src="photos/quality.jpg">
+        </div>
+        <div class="delivery">
+            <div class="deliveryText">
+                <h2>Доставка</h2>
+                <h3>Стандартный срок доставки составляет 2−4 рабочих дня, если в карточке товара не указано иное.
+                    <br>
+                    Доставка осуществляется до места, указанного клиентом при оформлении заявки, курьером или в
+                    отделения партнеров
+                </h3>
+            </div>
+            <img src="photos/leafFirst.jpg">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
                 var $bg_light = $('.aboutCompanyColor');
                 var bg_state = null;
                 var scroll_dark = 1600;
                 var scroll_light = 3600;
 
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     var scroll_current = $(this).scrollTop();
                     if (scroll_current < scroll_dark) {
                         if (bg_state != '#5b6330') {
@@ -131,7 +139,7 @@
                                 opacity: 0
                             });
                         }
-                    console.log(bg_state);
+                        console.log(bg_state);
                     } else if (scroll_current > scroll_light) {
                         if (bg_state != '#D4E09B') {
                             bg_state = '#D4E09B';
@@ -140,15 +148,15 @@
                             });
                         }
                     } else {
-                bg_state = null;
-                $bg_light.stop().animate({
-                        opacity: (scroll_current - scroll_dark) / (scroll_light - scroll_dark)
+                        bg_state = null;
+                        $bg_light.stop().animate({
+                            opacity: (scroll_current - scroll_dark) / (scroll_light - scroll_dark)
                         });
                     }
                 });
 
-                });
-            </script>
+            });
+        </script>
     </div>
     <!-- COMYNITY -->
     <div class="comynitySection">
@@ -161,7 +169,7 @@
                     <p class="mainTitle">Лидия - веб-разработчик, логист. </p>
                     <p> Глава компании "Чайный бум"</p>
                     <p> Также Лидия учавствовала в разработке сайта компании.
-                    К тому же занимаеться логистикой таваров их поставкой и ценнобразованием.</p>
+                        К тому же занимаеться логистикой таваров их поставкой и ценнобразованием.</p>
                 </div>
             </div>
             <div class="comynityPerson chet">
@@ -181,122 +189,139 @@
     <!-- COMYNITY -->
 
     <!-- SET -->
-        <div class="setSelection">
-            <h1>Наборы для вас</h1>
-            <div class="setBlock">
-                <div class="setMin" id="setMin">
-                    <img id="left" src="photos/right.png" alt="" width="70px">
-                    <div class="headTitleSection">
-                        <div itemid="headTitle" class="headTitle" id="headTitle">
-                            <p id="ht">Антистрес</p>
-                        </div>
-                        <div id="title" class="title" id="title">
-                            <p>Апельсин с имбирём 30г</p>
-                            <p>Гречишный чай 30г</p>
-                            <p>Анчан 30г</p>
-                            <p>Витаминный чай 30г</p>
-                            <p>Ночные грёзы 15шт</p>
-                        </div>
-                        <p class="cell" id="cell">1347 рублей</p>
-                        <button class="formButton" type="button">
-                            Заказать
-                        </button>
+    <div class="setSelection">
+        <h1>Наборы для вас</h1>
+        <div class="setBlock">
+            <div class="setMin" id="setMin">
+                <img id="left" src="photos/right.png" alt="" width="70px">
+                <div class="headTitleSection">
+                    <div itemid="headTitle" class="headTitle" id="headTitle">
+                        <p id="ht">Антистрес</p>
                     </div>
-                    <img id="right" src="photos/left.png" alt="" width="70px">
-                </div>
-
-                <div class="set" id="set1">
-                    <div class="headTitle">
-                        Для завтрака
-                    </div>
-                    <div class="title">
-                        <p>Эрл Грей 30г</p>
-                        <p>Ирландский виски 30г</p>
-                        <p>English Breakfast 30г</p>
-                        <p>Уда Пусселава 30г</p>
-                    </div>
-                    <div class="doun_set">
-                        <p class="cell">1197 рублей</p>
-                        <button class="formButton" type="button">
-                            Заказать
-                        </button>
-                    </div>
-                </div>
-                <div class="set" id="set2">
-                    <div class="headTitle">
-                        Антистрес
-                    </div>
-                    <div class="title">
+                    <div id="title" class="title" id="title">
                         <p>Апельсин с имбирём 30г</p>
-                            <p>Гречишный чай 30г</p>
-                            <p>Анчан 30г</p>
-                            <p>Витаминный чай 30г</p>
-                            <p>Ночные грёзы 15шт</p>
-                            <p>Фирменые стикеры</p>
+                        <p>Гречишный чай 30г</p>
+                        <p>Анчан 30г</p>
+                        <p>Витаминный чай 30г</p>
+                        <p>Ночные грёзы 15шт</p>
                     </div>
-                    <div class="doun_set">
-                        <p class="cell">1347 рублей</p>
-                        <button class="formButton" type="button">
-                            Заказать
-                        </button>
-                    </div>
+                    <p class="cell" id="cell">1347 рублей</p>
+                    <button class="formButton" type="button">
+                        Заказать
+                    </button>
                 </div>
-                <div class="set" id="set3">
-                    <div class="headTitle">
-                        Фруктовый
-                    </div>
-                    <div class="title">
-                        <p>Печёное яблочко 30г</p>
-                        <p>Бабушкин пирок 30г</p>
-                        <p>Персиковый сад 30г</p>
-                        <p>Улун белые ночи 30г</p>
-                        <p>Солнечный 30г</p>
-                    </div>
-                    <div class="doun_set">
-                        <p class="cell">1797 рублей</p>
-                        <button class="formButton" type="button">
-                            Заказать
-                        </button>
-                    </div>
+                <img id="right" src="photos/left.png" alt="" width="70px">
+            </div>
+
+            <div class="set" id="set1">
+                <div class="headTitle">
+                    Для завтрака
+                </div>
+                <div class="title">
+                    <p>Эрл Грей 30г</p>
+                    <p>Ирландский виски 30г</p>
+                    <p>English Breakfast 30г</p>
+                    <p>Уда Пусселава 30г</p>
+                </div>
+                <div class="doun_set">
+                    <p class="cell">1197 рублей</p>
+                    <button class="formButton" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+            <div class="set" id="set2">
+                <div class="headTitle">
+                    Антистрес
+                </div>
+                <div class="title">
+                    <p>Апельсин с имбирём 30г</p>
+                    <p>Гречишный чай 30г</p>
+                    <p>Анчан 30г</p>
+                    <p>Витаминный чай 30г</p>
+                    <p>Ночные грёзы 15шт</p>
+                    <p>Фирменые стикеры</p>
+                </div>
+                <div class="doun_set">
+                    <p class="cell">1347 рублей</p>
+                    <button class="formButton" type="button">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+            <div class="set" id="set3">
+                <div class="headTitle">
+                    Фруктовый
+                </div>
+                <div class="title">
+                    <p>Печёное яблочко 30г</p>
+                    <p>Бабушкин пирок 30г</p>
+                    <p>Персиковый сад 30г</p>
+                    <p>Улун белые ночи 30г</p>
+                    <p>Солнечный 30г</p>
+                </div>
+                <div class="doun_set">
+                    <p class="cell">1797 рублей</p>
+                    <button class="formButton" type="button">
+                        Заказать
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
     <!-- SET -->
-    
+
     <!-- COMMENT -->
-        <div class="commentSection">
+    <div class="commentSection">
+        <div class="name">
+            <h1>Отзывы</h1>
+        </div>
+        <div class="comment">
             <div class="commentBlock">
                 <div class="leftBlock">
-                    <div class="headerTitle"></div>
-                    <div class="title"></div>
+                    <div class="headerTitle" id="headerTitle">Иванов.А.П.</div>
+                    <div class="title" id="Otitle">
+                        Чайный магазин представляет широкий выбор чая, от классических сортов до экзотических смесей.
+                        Персонал приветливый и компетентный, всегда готовый помочь с выбором. Я оцениваю не только
+                        ассортимент, но и атмосферу заведения, которая придает посещению уют и радушность. Часто
+                        заказываю здесь на дом, и всегда остаюсь довольным качеством и оперативной доставкой. Рекомендую
+                        этот магазин всем любителям чая.
+                    </div>
                 </div>
                 <div class="rightBlock">
-                    <img src="photos/left.png" alt="">
-                    <p class="number"></p>
-                    <img src="photos/right.png" alt="">
+                    <img src="photos/right.png" id="oright" alt="">
+                    <div class="number">
+                        <p id="num" >01</p>
+                        <p class="numT" >/11</p>
+                    </div>
+                    <img src="photos/left.png" id="oleft" alt="">
                 </div>
             </div>
         </div>
+    </div>
     <!-- COMMENT -->
 
     <!-- KATALOG -->
     <div class="katalog" id="katalog">
         <h1>Каталог</h1>
         <div class="grid">
-                <div class="blueTea">
-                    <img src="photos/blueTea.jpg">
-                    <div class="product-about">
-                        <h3>Чай "Анчан"</h3>
-                        <h3>Анчан - это травяной чай с удивительным набором полезных свойств буквально ошеломляет своим ярко-синим цветом </h3>
-                        <h3>1900</h3>
-                        <button class="add" type="button">Заказать</button>
+            <div class="blueTea">
+                <img src="photos/blueTea.jpg">
+                <div class="product-about">
+                    <h3>Чай "Анчан"</h3>
+                    <h3>Анчан - это травяной чай с удивительным набором полезных свойств буквально ошеломляет своим
+                        ярко-синим цветом </h3>
+                    <h3>1900</h3>
+                    <button class="add" type="button">Заказать</button>
                 </div>
             </div>
             <div class="Tea">
                 <img src="photos/chamomileTea.jpg">
                 <div class="product-about">
                     <h3>Чай с ромашкой</h3>
-                    <h3>Ромашка, наверное, один из самых узнаваемых цветков в мире. Еще в детстве мы знали, что она поможет предсказать нам любовь, успокоить после стресса, и что из нее получается вкусный чай</h3>
+                    <h3>Ромашка, наверное, один из самых узнаваемых цветков в мире. Еще в детстве мы знали, что она
+                        поможет предсказать нам любовь, успокоить после стресса, и что из нее получается вкусный чай
+                    </h3>
                     <h3>1300</h3>
                     <button class="add" type="button">Заказать</button>
                 </div>
@@ -305,7 +330,8 @@
                 <img src="photos/bergamotTea.jpg">
                 <div class="product-about">
                     <h3>"Эрл Грей"</h3>
-                    <h3>Чай с бергамотом положительно влияет на настроение и когнитивную функцию, снижает стресс, тревогу, депрессию</h3>
+                    <h3>Чай с бергамотом положительно влияет на настроение и когнитивную функцию, снижает стресс,
+                        тревогу, депрессию</h3>
                     <h3>1500</h3>
                     <button class="add" type="button">Заказать</button>
                 </div>
@@ -314,7 +340,8 @@
                 <img src="photos/cherryTea.jpg">
                 <div class="product-about">
                     <h3>"Lost Cherry"</h3>
-                    <h3>Чай с ароматом вишни – простой и вкусный. Он сочетает в себе ни с чем не сравнимый, насыщенный аромат спелой вишни, сладость высушенных ягод, и конечно же все крепость черного чая</h3>
+                    <h3>Чай с ароматом вишни – простой и вкусный. Он сочетает в себе ни с чем не сравнимый, насыщенный
+                        аромат спелой вишни, сладость высушенных ягод, и конечно же все крепость черного чая</h3>
                     <h3>1800</h3>
                     <button class="add" type="button">Заказать</button>
                 </div>
@@ -323,7 +350,8 @@
                 <img src="photos/jasmineTea.jpg">
                 <div class="product-about">
                     <h3>Чай с жасмином</h3>
-                    <h3>В жасминовом чайном напитке сочетается польза черного, зеленого или белого чая и цветков жасмина, обладающих изысканных вкусом и нежным ароматом</h3>
+                    <h3>В жасминовом чайном напитке сочетается польза черного, зеленого или белого чая и цветков
+                        жасмина, обладающих изысканных вкусом и нежным ароматом</h3>
                     <h3>1500</h3>
                     <button class="add" type="button">Заказать</button>
                 </div>
@@ -332,7 +360,9 @@
                 <img src="photos/mintTea.jpg">
                 <div class="product-about">
                     <h3>Чай с мятой</h3>
-                    <h3>Чай с мятой — это напиток на основе чая (черного или зеленого) и листьев мяты. Он имеет ментоловый аромат и освежающий вкус, который помогает расслабиться и прийти в гармонию с собой</h3>
+                    <h3>Чай с мятой — это напиток на основе чая (черного или зеленого) и листьев мяты. Он имеет
+                        ментоловый аромат и освежающий вкус, который помогает расслабиться и прийти в гармонию с собой
+                    </h3>
                     <h3>1100</h3>
                     <button class="add" type="button">Заказать</button>
                 </div>
