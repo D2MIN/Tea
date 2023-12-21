@@ -807,9 +807,16 @@ input:focus::-webkit-input-placeholder {
   .setSelection .setBlock .setMin {
     display: flex;
     flex-direction: row;
+    min-width: 0px;
+  }
+  .setSelection .setBlock .setMin img {
+    width: 50px;
   }
   .setSelection .setBlock .setMin .headTitleSection .title {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .setSelection h1 {
+    font-size: 200%;
   }
 }
 @media (max-width: 330px) {

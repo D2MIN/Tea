@@ -569,18 +569,18 @@ li{
 
 // COMENT
 .commentSection {
-}
-.commentBlock {
-}
-.leftBlock {
-}
-.headerTitle {
-}
-.title {
-}
-.rightBlock {
-}
-.number {
+    .commentBlock {
+        .leftBlock {
+            .headerTitle {
+            }
+            .title {
+            }
+        }
+        .rightBlock {
+            .number {
+            }
+        }
+    }
 }
 // COMMENT
 
@@ -879,9 +879,18 @@ input:focus::-webkit-input-placeholder {
         .setMin{
             display: flex;
             flex-direction:row;
-            .headTitleSection .title{
-                font-size: 20px;
+            min-width: 0px;
+            img{
+                width: 50px;
             }
+            .headTitleSection .title{
+                font-size: 16px;
+            }
+        }
+    }
+    .setSelection{
+        h1{
+            font-size: 200%;
         }
     }
 }
