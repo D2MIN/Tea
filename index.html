@@ -13,7 +13,7 @@
 <body>
     <!-- HEADER -->
     <div class="vidioBg">
-        <video src="photos/bgHeader.mp4" autoplay muted loop width="100%"></video>
+        <video src="photos/bgHeader.mp4" autoplay muted loop></video>
         <div class="header">
             <div class="upHeader">
                 <div class="name">
@@ -59,15 +59,15 @@
     </div>
     <!-- HEADER -->
     <div class="katalogPhotos">
-        <div class="bergamot">
-            <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
-            <img src="photos/bergamot.jpg">
+        <div class="bergamot" onclick="window.location.href = '#bergamotTea';">
+                <p>Насыщеный чай с бергамотом, имеющий фантастическую рецептуру и вкус</p>
+                <img src="photos/bergamot.jpg">
         </div>
-        <div class="jasmine">
+        <div class="jasmine" onclick="window.location.href = '#jasmineTea';">
             <p>Ароматный чай с жасмином, имеющий невероятный аромат и терпкость</p>
             <img src="photos/jasmine.jpg">
         </div>
-        <div class="mint">
+        <div class="mint" onclick="window.location.href = '#mintTea';">
             <p>Раслабляющий чай с мятой, который способен востановить ваши моральные силы</p>
             <img src="photos/mint.jpg">
         </div>
@@ -210,7 +210,7 @@
                         Для завтрака
                     </div>
                     <div class="title">
-                        <p>ЭрлГрей 30г</p>
+                        <p>Эрл Грей 30г</p>
                         <p>Ирландский виски 30г</p>
                         <p>English Breakfast 30г</p>
                         <p>Уда Пусселава 30г</p>
@@ -301,7 +301,7 @@
                     <button class="add" type="button">Заказать</button>
                 </div>
             </div>
-            <div class="Tea">
+            <div class="Tea" id="bergamotTea">
                 <img src="photos/bergamotTea.jpg">
                 <div class="product-about">
                     <h3>"Эрл Грей"</h3>
@@ -319,7 +319,7 @@
                     <button class="add" type="button">Заказать</button>
                 </div>
             </div>
-            <div class="Tea">
+            <div class="Tea" id="jasmineTea">
                 <img src="photos/jasmineTea.jpg">
                 <div class="product-about">
                     <h3>Чай с жасмином</h3>
@@ -328,7 +328,7 @@
                     <button class="add" type="button">Заказать</button>
                 </div>
             </div>
-            <div class="Tea">
+            <div class="Tea" id="mintTea">
                 <img src="photos/mintTea.jpg">
                 <div class="product-about">
                     <h3>Чай с мятой</h3>
