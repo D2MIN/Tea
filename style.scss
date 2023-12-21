@@ -569,18 +569,18 @@ li{
 
 // COMENT
 .commentSection {
-}
-.commentBlock {
-}
-.leftBlock {
-}
-.headerTitle {
-}
-.title {
-}
-.rightBlock {
-}
-.number {
+    .commentBlock {
+        .leftBlock {
+            .headerTitle {
+            }
+            .title {
+            }
+        }
+        .rightBlock {
+            .number {
+            }
+        }
+    }
 }
 // COMMENT
 
@@ -879,9 +879,18 @@ input:focus::-webkit-input-placeholder {
         .setMin{
             display: flex;
             flex-direction:row;
-            .headTitleSection .title{
-                font-size: 20px;
+            min-width: 0px;
+            img{
+                width: 50px;
             }
+            .headTitleSection .title{
+                font-size: 16px;
+            }
+        }
+    }
+    .setSelection{
+        h1{
+            font-size: 200%;
         }
     }
 }
@@ -935,3 +944,86 @@ input:focus::-webkit-input-placeholder {
         order: 1;
     }
 }
+
+@media (max-width: 580px) {
+    .comynitySection .comynityBlock .comynityPerson {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .comynitySection .comynityBlock .comynityPerson .personImg {
+      margin-left: 50px;
+    }
+    .comynitySection .comynityBlock .comynityPerson .personImg img {
+      width: 200px;
+      height: 200px;
+    }
+    .comynitySection .comynityBlock .comynityPerson .personTitle .maintitle {
+      font-size: 24px;
+    }
+    .comynitySection .comynityBlock .comynityPerson .personImg img {
+      order: 0;
+    }
+    .comynitySection .comynityBlock .comynityPerson .personTitle {
+      order: 1;
+    }
+    .katalog{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .grid{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-right: 20px;
+    }
+    .product-about  h3{
+      font-size: 15px;
+    }
+    #formText{
+      margin: 10px;
+    }
+    .aboutCompanyTitle{
+      font-size: 20px;
+      text-shadow:
+      1px 1px 1px black,
+      -1px 1px 1px black;
+      color: #D4E09B;
+      transition: all .5s;
+    }
+    .aboutCompanyTitle img{
+      display: none;
+    }
+    .aboutCompany h3{
+      font-size: 15px;
+    }
+    .aboutCompany h2{
+      font-size: 25px;
+    }
+    .support{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .support img{
+      max-height: 200px;
+    }
+    .FormButton{
+      margin: auto;
+      margin-left: 50px;
+    }
+    .cloud{
+      max-height: 30px;
+      max-width: 60px;
+      padding: 0;
+    }
+    .clouds{
+      display: flex;
+      flex-direction: row;
+    }
+    .delivery img{
+      max-width: 300px;
+      max-height: 150px;
+    }
+  }/*# sourceMappingURL=style.css.map */

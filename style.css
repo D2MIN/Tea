@@ -688,8 +688,6 @@ input:focus::-webkit-input-placeholder {
   margin-bottom: 20px;
 }
 
-
-
 @media (max-width: 1920px) and (max-height: 1100px) {
   .header .upHeader .name h1 {
     border-bottom: 0px solid #a3b924;
@@ -801,13 +799,6 @@ input:focus::-webkit-input-placeholder {
   .setSelection .setBlock .setMin .headTitleSection .title {
     font-size: 20px;
   }
-  .grid{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 20px;
-    margin: 10px;
-  }
 }
 @media (max-width: 625px) {
   .setSelection .setBlock .set {
@@ -816,9 +807,16 @@ input:focus::-webkit-input-placeholder {
   .setSelection .setBlock .setMin {
     display: flex;
     flex-direction: row;
+    min-width: 0px;
+  }
+  .setSelection .setBlock .setMin img {
+    width: 50px;
   }
   .setSelection .setBlock .setMin .headTitleSection .title {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .setSelection h1 {
+    font-size: 200%;
   }
 }
 @media (max-width: 330px) {
@@ -861,60 +859,83 @@ input:focus::-webkit-input-placeholder {
   .comynitySection .comynityBlock .comynityPerson .personTitle {
     order: 1;
   }
-  .katalog{
+}
+@media (max-width: 580px) {
+  .comynitySection .comynityBlock .comynityPerson {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg {
+    margin-left: 50px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg img {
+    width: 200px;
+    height: 200px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personTitle .maintitle {
+    font-size: 24px;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personImg img {
+    order: 0;
+  }
+  .comynitySection .comynityBlock .comynityPerson .personTitle {
+    order: 1;
+  }
+  .katalog {
     display: flex;
     flex-wrap: wrap;
   }
-  .grid{
+  .grid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 20px;
   }
-  .product-about  h3{
+  .product-about h3 {
     font-size: 15px;
   }
-  #formText{
+  #formText {
     margin: 10px;
   }
-  .aboutCompanyTitle{
+  .aboutCompanyTitle {
     font-size: 20px;
-    text-shadow:
-    1px 1px 1px black,
-    -1px 1px 1px black;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black;
     color: #D4E09B;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  .aboutCompanyTitle img{
+  .aboutCompanyTitle img {
     display: none;
   }
-  .aboutCompany h3{
+  .aboutCompany h3 {
     font-size: 15px;
   }
-  .aboutCompany h2{
+  .aboutCompany h2 {
     font-size: 25px;
   }
-  .support{
+  .support {
     display: flex;
     flex-wrap: wrap;
   }
-  .support img{
+  .support img {
     max-height: 200px;
   }
-  .FormButton{
+  .FormButton {
     margin: auto;
     margin-left: 50px;
   }
-  .cloud{
+  .cloud {
     max-height: 30px;
     max-width: 60px;
     padding: 0;
   }
-  .clouds{
+  .clouds {
     display: flex;
     flex-direction: row;
   }
-  .delivery img{
+  .delivery img {
     max-width: 300px;
     max-height: 150px;
   }
@@ -932,6 +953,8 @@ input:focus::-webkit-input-placeholder {
   }
   .toKatalog{
     width: 250px;
+    margin: 0;
+    margin-left: 50px;
   }
   /*NEW*/
 }/*# sourceMappingURL=style.css.map */
