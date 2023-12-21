@@ -918,4 +918,20 @@ input:focus::-webkit-input-placeholder {
     max-width: 300px;
     max-height: 150px;
   }
+  /*NEW*/
+  .katalogTextBlock{
+    margin: auto;
+  }
+  .katalogTextBlock h3{
+    font-size: 15px;
+    margin:0;
+    text-align:justify;
+    width: 90%;
+    margin-right: 35px;
+    margin: 20px;
+  }
+  .toKatalog{
+    width: 250px;
+  }
+  /*NEW*/
 }/*# sourceMappingURL=style.css.map */
