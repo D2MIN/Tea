@@ -20,10 +20,14 @@ comment.onreadystatechange = function() {
             tit.style.opacity = 0;
             headerTitle.textContent = jsonData[index]["name"];
             setTimeout(() => {
-                num.textContent = "0" + (index+1);
                 tit.textContent = jsonData[index]["comment"];
                 tit.style.opacity = 1;
               }, 400);
+        }
+        if(index+1 >= 10){
+            num.textContent = (index+1);
+        }else{
+            num.textContent = "0" + (index+1);
         }
     });
 
