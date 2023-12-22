@@ -1023,6 +1023,25 @@ footer{
         }
     }
 }
+@media (max-width:376px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            height: auto;
+            .leftBlock{
+                height: 400px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
 @media (max-width:326px){
     .commentSection{
         .name{
@@ -1041,6 +1060,7 @@ footer{
             }
         }
     }
+    
 }
 // feedback
 
