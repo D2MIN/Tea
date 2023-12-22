@@ -569,15 +569,63 @@ li{
 
 // COMENT
 .commentSection {
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 5px 5px 50px #00000063;
+    background-color: $colorBgOne;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    .name{
+        margin-top: 180px;
+        font-size: 30px;
+    }
+    .comment{
+        margin-bottom: 80px;
+    }
     .commentBlock {
+        height: 600px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .leftBlock {
+            height: 500px;
             .headerTitle {
+                font-weight: 600;
+                font-size: 32px;
+                margin-bottom: 10px;
+                color: $colorText;
             }
             .title {
+                transition: opacity 1s ease;
+                opacity: 1;
+                border-right: 2.4px solid $colorText;
+                padding: 20px 10px 0px 0px;
+                color: $colorText;
+                font-size: 22px;
+                margin-right: 10px;
             }
         }
         .rightBlock {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            img{
+                margin: 10px;
+                width: 50px;
+            }
             .number {
+                display: flex;
+                color: $colorText;
+                & p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .numT{
+                    color: #adadad8f;
+                }
             }
         }
     }
