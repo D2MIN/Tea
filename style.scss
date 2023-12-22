@@ -919,6 +919,71 @@ input:focus::-webkit-input-placeholder {
     }
 }
 
+// feedback
+
+@media (max-width: 736px){
+    .commentSection {
+        height: auto;
+        .comment {
+            padding: 40px;
+        }
+        .commentBlock{
+           display: block;
+        }
+    }
+}
+
+@media (max-width:478px){
+    .commentSection{
+        .commentBlock{
+            .leftBlock{
+                height: 400px;
+                .title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:426px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            .leftBlock{
+                height: 450px;
+                .title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:376px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            height: auto;
+            .leftBlock{
+                height: 400px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+// feedback
+
 @media (max-width:625px){
     .setSelection .setBlock {
        .set{
@@ -1074,4 +1139,21 @@ input:focus::-webkit-input-placeholder {
       max-width: 300px;
       max-height: 150px;
     }
-  }/*# sourceMappingURL=style.css.map */
+    // KATALOG
+    .katalogTextBlock{
+        margin: auto;
+    }
+    .katalogTextBlock h3{
+        font-size: 15px;
+        margin:0;
+        text-align:justify;
+        width: 90%;
+        margin-right: 35px;
+        margin: 20px;
+    }
+    .toKatalog{
+        width: 250px;
+        margin: 0;
+        margin-left: 50px;
+    }
+}

@@ -863,6 +863,56 @@ input:focus::-webkit-input-placeholder {
     font-size: 20px;
   }
 }
+@media (max-width: 736px) {
+  .commentSection {
+    height: auto;
+  }
+  .commentSection .comment {
+    padding: 40px;
+  }
+  .commentSection .commentBlock {
+    display: block;
+  }
+}
+@media (max-width: 478px) {
+  .commentSection .commentBlock .leftBlock {
+    height: 400px;
+  }
+  .commentSection .commentBlock .leftBlock .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 426px) {
+  .commentSection .name {
+    margin-top: 20px;
+  }
+  .commentSection .comment {
+    margin-bottom: 0px;
+  }
+  .commentSection .commentBlock .leftBlock {
+    height: 450px;
+  }
+  .commentSection .commentBlock .leftBlock .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 376px) {
+  .commentSection .name {
+    margin-top: 20px;
+  }
+  .commentSection .comment {
+    margin-bottom: 0px;
+  }
+  .commentSection .commentBlock {
+    height: auto;
+  }
+  .commentSection .commentBlock .leftBlock {
+    height: 400px;
+  }
+  .commentSection .commentBlock .leftBlock .title {
+    font-size: 16px;
+  }
+}
 @media (max-width: 625px) {
   .setSelection .setBlock .set {
     display: none;
@@ -1002,22 +1052,20 @@ input:focus::-webkit-input-placeholder {
     max-width: 300px;
     max-height: 150px;
   }
-  /*NEW*/
-  .katalogTextBlock{
+  .katalogTextBlock {
     margin: auto;
   }
-  .katalogTextBlock h3{
+  .katalogTextBlock h3 {
     font-size: 15px;
-    margin:0;
-    text-align:justify;
+    margin: 0;
+    text-align: justify;
     width: 90%;
     margin-right: 35px;
     margin: 20px;
   }
-  .toKatalog{
+  .toKatalog {
     width: 250px;
     margin: 0;
     margin-left: 50px;
   }
-  /*NEW*/
 }/*# sourceMappingURL=style.css.map */
