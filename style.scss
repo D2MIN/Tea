@@ -632,6 +632,54 @@ li{
 }
 // COMMENT
 
+// PARTNER
+.partnerSection {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 400px;
+    position: relative;
+    .partnerBlock {
+        .headerTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vh;
+            font-size: 24px;
+            p{
+                max-width: 600px;
+                text-align: center;
+                margin-top: 3vh;
+                font-size: 18px;
+            }
+        }
+        .wrapper {
+            width: 100%;
+            overflow: hidden;
+          }
+          
+        .content {
+            display: flex;
+            white-space: nowrap;
+            opacity: 1;
+            transition: opacity 0.7s ease-in-out;
+        }
+          
+        .item {
+            padding: 10px;
+            margin: 10vh 0px;
+            font-size: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Добавьте стили вашим элементам */
+            img{
+                border-radius: 20px;
+                width: 220px;
+                height: 220px;
+            }
+        } 
+    }
+}
+// PARTNER
+
 // --------------CATOLOG------------
 .katalog{
     display: flex;
@@ -793,7 +841,7 @@ input:focus::-webkit-input-placeholder {
 
 // THIS is CODE LIDA aka FORM
 
-//   HEADER
+//   FOOTER
 footer{
     background-color: #161b10;
     display: flex;
@@ -851,7 +899,7 @@ footer{
     display: flex;
     align-items: center;
   }
-//   HEADER
+//   FOOTER
 
 // -------- MEDIA -------------
 
@@ -1264,3 +1312,26 @@ footer{
     }
   // footer
 }
+
+// PARTNER
+@media(max-width:430px){
+    .partnerSection .partnerBlock .headerTitle{
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+    .partnerSection .partnerBlock{
+        .wrapper{
+            .content{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+// PARTNER
