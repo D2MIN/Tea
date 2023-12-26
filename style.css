@@ -19,19 +19,6 @@ a {
 li {
   list-style: none;
 }
-#headVideo{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 5;
-  filter: blur(3px);
-  transform: scale(1.04);
-}
 
 .vidioBg {
   min-height: 100vh;
@@ -664,6 +651,24 @@ button:hover {
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
 }
+.commentSection{
+  background-image: url("photos/teaBack.jpg");
+  background-size: 100%;
+  background-blend-mode: multiply;
+  height: 800px;
+  min-width: 100%;
+  margin: 0 auto;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment{
+  background-color: #F6F4D2;
+}
+.commentBlock{
+  margin-left: 25px;
+}
 
 .grid {
   justify-content: center;
@@ -1175,6 +1180,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  .comment{
+    height: 600px;
+  }
+  .rightBlock{
+    margin-top: 150px;
+  }
   .support img {
     max-height: 200px;
   }
@@ -1234,6 +1245,18 @@ footer {
     margin-left: 15px;
     margin-top: 5px;
     margin-bottom: 15px;
+  }
+  .video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    filter: blur(3px);
+    transform: scale(1.04);
   }
 }
 @media (max-width: 430px) {
