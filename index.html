@@ -14,7 +14,9 @@
 <body>
     <!-- HEADER -->
     <div class="vidioBg">
-        <video src="photos/bgHeader.mp4" autoplay muted loop></video>
+        <video playsinline autoplay="autoplay" loop preload="auto" id="headerVideo" muted>
+            <source src="photos/header.mp4" type="video/mp4">
+        </video>
         <div class="header">
             <div class="upHeader">
                 <div class="name">

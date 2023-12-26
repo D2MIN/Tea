@@ -18,9 +18,23 @@ a {
 li {
   list-style: none;
 }
+#headVideo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 5;
+  filter: blur(3px);
+  transform: scale(1.04);
+}
 
 .vidioBg {
   min-height: 100vh;
+  min-width: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -30,6 +44,7 @@ li {
 
 .header {
   box-shadow: none;
+  bottom: 0;
   position: absolute;
   color: #161b10;
   min-height: 100%;
