@@ -632,6 +632,54 @@ li{
 }
 // COMMENT
 
+// PARTNER
+.partnerSection {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 400px;
+    position: relative;
+    .partnerBlock {
+        .headerTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vh;
+            font-size: 24px;
+            p{
+                max-width: 600px;
+                text-align: center;
+                margin-top: 3vh;
+                font-size: 18px;
+            }
+        }
+        .wrapper {
+            width: 100%;
+            overflow: hidden;
+          }
+          
+        .content {
+            display: flex;
+            white-space: nowrap;
+            opacity: 1;
+            transition: opacity 0.7s ease-in-out;
+        }
+          
+        .item {
+            padding: 10px;
+            margin: 10vh 0px;
+            font-size: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Добавьте стили вашим элементам */
+            img{
+                border-radius: 20px;
+                width: 220px;
+                height: 220px;
+            }
+        } 
+    }
+}
+// PARTNER
+
 // --------------CATOLOG------------
 .katalog{
     display: flex;
@@ -793,6 +841,66 @@ input:focus::-webkit-input-placeholder {
 
 // THIS is CODE LIDA aka FORM
 
+//   FOOTER
+footer{
+    background-color: #161b10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footerImg{
+    border-radius: 50%;
+    width: 200px;
+    margin: 20px;
+  }
+  .logo{
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .footerText a{
+    color: #CBDFBD;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 50px;
+  }
+  .footerText{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .logoClass a{
+    color: #CBDFBD;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .logoClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .logoImg{
+    justify-content: center;
+  }
+  .contacts a{
+    color: #CBDFBD;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .contacts{
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  .teleph, .mail{
+    display: flex;
+    align-items: center;
+  }
+//   FOOTER
+
 // -------- MEDIA -------------
 
 @media (max-width: 1920px) and (max-height: 1100px){
@@ -918,6 +1026,91 @@ input:focus::-webkit-input-placeholder {
         }
     }
 }
+
+// feedback
+
+@media (max-width: 736px){
+    .commentSection {
+        height: auto;
+        .comment {
+            padding: 40px;
+        }
+        .commentBlock{
+           display: block;
+        }
+    }
+}
+
+@media (max-width:478px){
+    .commentSection{
+        .commentBlock{
+            .leftBlock{
+                height: 400px;
+                .title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:426px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            .leftBlock{
+                height: 450px;
+                .title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:376px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            height: auto;
+            .leftBlock{
+                height: 400px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:326px){
+    .commentSection{
+        .name{
+            margin-top: 20px;
+        }
+        .comment{
+            margin-bottom: 0px;
+        }
+        .commentBlock{
+            height: auto;
+            .leftBlock{
+                height: 500px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+}
+// feedback
 
 @media (max-width:625px){
     .setSelection .setBlock {
@@ -1074,4 +1267,71 @@ input:focus::-webkit-input-placeholder {
       max-width: 300px;
       max-height: 150px;
     }
-  }/*# sourceMappingURL=style.css.map */
+    // KATALOG
+    .katalogTextBlock{
+        margin: auto;
+    }
+    .katalogTextBlock h3{
+        font-size: 15px;
+        margin:0;
+        text-align:justify;
+        width: 90%;
+        margin-right: 35px;
+        margin: 20px;
+    }
+    .toKatalog{
+        width: 250px;
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    // footer
+    .footerImg{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerText a{
+        font-size: 20px;
+        text-align: center;
+    }
+    .logoClass a{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contacts a{
+        font-size: 20px;
+    }
+    .contacts{
+        margin-left: 15px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+  // footer
+}
+
+// PARTNER
+@media(max-width:430px){
+    .partnerSection .partnerBlock .headerTitle{
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+    .partnerSection .partnerBlock{
+        .wrapper{
+            .content{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+// PARTNER
