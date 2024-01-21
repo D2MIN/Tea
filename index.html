@@ -15,7 +15,9 @@
 <body>
     <!-- HEADER -->
     <div class="vidioBg">
-        <video src="photos/bgHeader.mp4" autoplay muted loop></video>
+        <video loop autoplay="autoplay" type="video/mp4" width="100%"class="video" muted>
+            <source src="photos/header.mp4">
+        </video>
         <div class="header">
             <div class="upHeader">
                 <div class="name">
@@ -24,10 +26,10 @@
                 <div class="linksBlock">
                     <div class="links">
                         <ul class="ulLins">
-                            <li><a href="">
+                            <li><a href="#katalog">
                                     <p>Каталог</p>
                                 </a></li>
-                            <li><a href="">
+                            <li><a href="#delivery">
                                     <p>Доставка</p>
                                 </a></li>
                             <li class="about">
@@ -35,12 +37,12 @@
                                     <p>О нас</p>
                                 </a>
                                 <ul class="ulAbout">
-                                    <li><a href="">О компании</a></li>
-                                    <li><a href="">Отзывы</a></li>
-                                    <li><a href="">Поддержка</a></li>
+                                    <li><a href="#aboutUs">О компании</a></li>
+                                    <li><a href="#comment">Отзывы</a></li>
+                                    <li><a href="#support">Поддержка</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">
+                            <li><a href="#contacts">
                                     <p>Контакты</p>
                                 </a></li>
                             <li><a href="">
@@ -87,10 +89,10 @@
         <div class="aboutCompanyColor"></div>
         <div class="aboutCompanyTitle">
             <img src="photos/titleLeft.jpg">
-            <h1>О Компании</h1>
+            <h1 id="aboutUs">О Компании</h1>
             <img src="photos/titleRight.jpg">
         </div>
-        <div class="support">
+        <div class="support" id="support">
             <div class="supportText">
                 <h2>Поддержка</h2>
                 <h3>Поможем в подборе сортов чая лично для вас, а также ответим на все вопросы, которые могут у вас
@@ -112,9 +114,9 @@
             </div>
             <img src="photos/quality.jpg">
         </div>
-        <div class="delivery">
+        <div class="delivery" >
             <div class="deliveryText">
-                <h2>Доставка</h2>
+                <h2 id="delivery">Доставка</h2>
                 <h3>Стандартный срок доставки составляет 2−4 рабочих дня, если в карточке товара не указано иное.
                     <br>
                     Доставка осуществляется до места, указанного клиентом при оформлении заявки, курьером или в
@@ -277,7 +279,7 @@
         <div class="name">
             <h1>Отзывы</h1>
         </div>
-        <div class="comment">
+        <div class="comment" id="comment">
             <div class="commentBlock">
                 <div class="leftBlock">
                     <div class="headerTitle" id="headerTitle">Иванов.А.П.</div>
@@ -466,9 +468,9 @@
     <footer class="footer">
         <img class="footerImg" src="photos/footer.jpg">
         <div class="footerText">
-            <a href="">О нас</a>
-            <a href="">Каталог</a>
-            <a href="">Доставка</a>
+            <a href="#aboutUs">О нас</a>
+            <a href="#katalog">Каталог</a>
+            <a href="#delivery">Доставка</a>
         </div>
         <div class="logoClass">
             <a>Связаться с нами</a>
@@ -476,15 +478,15 @@
                 <a href="https://t.me/Fazanir">
                     <img class="logo" src="photos/teleg.jpg">
                 </a>
-                <a href="">
+                <a href="https://i.pinimg.com/564x/49/90/14/499014acaabf940d6557e5c330c11490.jpg">
                     <img class="logo" src="photos/whats.jpg">
                 </a>
-                <a href="">
+                <a href="https://www.whatsapp.com/?lang=ru_RU">
                     <img class="logo" src="photos/dis.jpg">
                 </a>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="teleph">
                 <img class="logo" src="photos/phone.jpg">
                 <a>+7-999-99-99</a>
